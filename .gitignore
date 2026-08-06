@@ -1,0 +1,75 @@
+# Temporary and binary files
+*~
+*.py[cod]
+*.so
+*.cfg
+!.isort.cfg
+!setup.cfg
+*.orig
+*.log
+*.pot
+__pycache__/*
+.cache/*
+.*.swp
+*/.ipynb_checkpoints/*
+.DS_Store
+
+# Project files
+.ropeproject
+.project
+.pydevproject
+.settings
+.idea
+.vscode
+tags
+
+# Package files
+*.egg
+*.eggs/
+.installed.cfg
+*.egg-info
+
+# Unittest and coverage
+htmlcov/*
+.coverage
+.coverage.*
+.tox
+junit*.xml
+coverage.xml
+.pytest_cache/
+
+# Build and docs folder/files
+build/*
+dist/*
+sdist/*
+docs/api/*
+docs/_rst/*
+docs/_build/*
+cover/*
+MANIFEST
+
+# Per-project virtualenvs
+.venv*/
+.conda*/
+.python-version
+
+# Environment variables (keep secrets safe!)
+.env
+.env.local
+
+# Output files
+data/outputs/
+*.docx
+
+# Member accounts, sessions and usage audit log (never commit)
+data/auth/
+*.db
+
+# Excluded folders
+graveyard/
+# Vector database: ~660 MB, exceeds GitHub's 100 MB per-file limit.
+# See docs/DEPLOYMENT_EC2.md for how to supply it on a server.
+src/sfsa_rag_assistant/data/
+
+# Local agent/editor config
+.claude/
